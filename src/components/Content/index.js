@@ -5,6 +5,9 @@ import Card from './Card';
 import Home from './Home';
 
 const Main = styled.main`
+  max-width: 1400px;
+  margin: 0 auto;
+
   & h1 {
     text-align: center;
     font-weight: normal;
@@ -15,7 +18,7 @@ const Sites = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // align-items: center;
+  align-items: center;
 `;
 
 // Returns shuffled array after copying one level deep

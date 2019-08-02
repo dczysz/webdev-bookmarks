@@ -5,22 +5,23 @@ import styled from 'styled-components';
 const activeClassName = 'active';
 
 const Li = styled.li`
-  // border-right: 1px solid;
-
-  // &:first-child {
-  //   border-left: 1px solid;
-  // }
   margin: 1rem 0;
 `;
 
 const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
-  color: red;
+  color: black;
   padding: 1rem;
   text-transform: capitalize;
   text-decoration: none;
 
   &.${activeClassName} {
-    color: green;
+    color: #ff7bda;
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: #ff7bda;
+    opacity: 0.5;
   }
 
   @media screen and (min-width: 768px) {
