@@ -6,12 +6,20 @@
     4. Resize to 700px width
     5. Save in /assets/img/ with hyphenated-name
     6. Add import and export in this file and set as `url` property in data.js
+
+    More resources: https://undesign.learn.uno/
 */
 
 // Colors
 import coolors from './coolors.png';
 import colorHunt from './color-hunt.png';
 import colorSpace from './color-space.png';
+import colorLisa from './color-lisa.png';
+import colormind from './colormind.png';
+import colorsInteractor from './colors-interactor.png';
+import cssGradient from './css-gradient.png';
+import picular from './picular.png';
+import grabient from './grabient.png';
 
 // Images
 import undraw from './undraw.png';
@@ -20,10 +28,13 @@ import imageColor from './image-color.png';
 import humaaans from './humaaans.png';
 import fontAwesome from './font-awesome.png';
 import svgRepo from './svg-repo.png';
+import personas from './personas.png';
+import duotone from './duotone.png';
 
 // Backgrounds
 import coolBackgrounds from './cool-backgrounds.png';
 import heroPatterns from './hero-patterns.png';
+import subtlePatterns from './subtle-patterns.png';
 import svgBackgrounds from './svg-backgrounds.png';
 
 // HTML
@@ -75,29 +86,54 @@ import checklistDesign from './checklist-design.png';
 import molamil from './molamil.png';
 import stripe from './stripe.png';
 import newlytics from './newlytics.png';
+import emailLove from './email-love.png';
+import componentsAi from './components-ai.png';
+import webDev from './web-dev.png';
+import awwwards from './awwwards.png';
+import pttrns from './pttrns.png';
+import pages from './pages.png';
+import materialUi from './material-ui.png';
+import madeWithVue from './made-with-vue.png';
+import madeWithReact from './made-with-react.png';
+import madeWithLaravel from './made-with-laravel.png';
+import bulma from './bulma.png';
+import webframe from './webframe.png';
+import designDetails from './design-details.png';
+import unicons from './unicons.png';
+import forkAwesome from './fork-awesome.png';
+import collectUi from './collect-ui.png';
+import uiSources from './ui-sources.png';
+import dribbble from './dribbble.png';
+import behance from './behance.png';
+import onePageLove from './one-page-love.png';
+import uiMovement from './ui-movement.png';
+import designMunk from './designmunk.png';
+import experimentalLayout from './experimental-layout.png';
 
 export const images = {
-  coolors,
   colorHunt,
+  colorLisa,
+  colormind,
   colorSpace,
+  coolors,
+  coolBackgrounds,
+  cssfx,
+  cssEffectsSnippets,
+  cssTricksGrid,
+  cssTricksDate,
+  cssTricksFlexbox,
   undraw,
   ezgif,
   imageColor,
   humaaans,
   fontAwesome,
   svgRepo,
-  coolBackgrounds,
   heroPatterns,
   svgBackgrounds,
   linkRels,
   metaTags,
-  cssfx,
-  cssEffectsSnippets,
-  textInputEffects,
-  cssTricksGrid,
-  cssTricksDate,
-  cssTricksFlexbox,
   webDevTrick,
+  textInputEffects,
   hamburgers,
   everyLayout,
   modernJs,
@@ -129,4 +165,34 @@ export const images = {
   molamil,
   stripe,
   newlytics,
+  emailLove,
+  componentsAi,
+  webDev,
+  awwwards,
+  pttrns,
+  pages,
+  materialUi,
+  madeWithVue,
+  madeWithReact,
+  madeWithLaravel,
+  bulma,
+  webframe,
+  designDetails,
+  unicons,
+  forkAwesome,
+  collectUi,
+  uiSources,
+  dribbble,
+  behance,
+  onePageLove,
+  uiMovement,
+  designMunk,
+  experimentalLayout,
+  colorsInteractor,
+  cssGradient,
+  picular,
+  grabient,
+  personas,
+  subtlePatterns,
+  duotone,
 };
