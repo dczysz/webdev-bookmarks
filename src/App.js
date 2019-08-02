@@ -7,8 +7,6 @@ import Content from './components/Content';
 
 const pageNames = Object.keys(sites);
 
-console.log(pageNames);
-
 const App = () => {
   return (
     <Router>

@@ -10,6 +10,7 @@ const Ul = styled.ul`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border-bottom: 1px solid;
 `;
 
 const Nav = ({ pages }) => {
