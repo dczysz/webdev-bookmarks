@@ -1,3 +1,15 @@
+:root {
+  --shadow-big: 0 4px 8px 0 #0003, 0 12px 24px 0 #0002;
+  --shadow-small: 0 2px 4px 0 #0003, 0 3px 10px 0 #0002;
+  --timing-shadow: 0.2s;
+  --radius: 4px;
+  --white: #fff;
+  --off-white: ##fafafa;
+  --primary: #ff7bda;
+  --secondary: #a2d6eb;
+  --mobile: 576px;
+  --tablet: 700px;
+}
 *,
 *::before,
 *::after {
@@ -13,7 +25,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: var(--off-white);
 }
 
 code {

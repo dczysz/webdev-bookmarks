@@ -5,27 +5,28 @@ import styled from 'styled-components';
 const activeClassName = 'active';
 
 const Li = styled.li`
-  margin: 1rem 0;
+  margin: 0.5rem 0;
+  // display: none;
+
+  @media screen and (min-width: 700px) {
+    display: block;
+  }
 `;
 
 const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   color: black;
-  padding: 1rem;
+  padding: 0.5rem;
   text-transform: capitalize;
   text-decoration: none;
 
   &.${activeClassName} {
-    color: #ff7bda;
+    color: var(--primary);
     pointer-events: none;
   }
 
   &:hover {
-    color: #ff7bda;
+    color: var(--primary);
     opacity: 0.5;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 0.5rem 0.75rem;
   }
 `;
 

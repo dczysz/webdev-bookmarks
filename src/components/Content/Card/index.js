@@ -6,20 +6,20 @@ const A = styled.a`
   text-decoration: none;
   color: inherit;
   width: 100%;
-  border-radius: 4px;
+  border-radius: var(--radius);
   margin: 1rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 4px 8px 0 #0003, 0 12px 24px 0 #0002;
-  background-color: #fff;
-  transition: box-shadow 0.3s;
+  box-shadow: var(--shadow-big);
+  background-color: var(--white);
+  transition: box-shadow var(--timing-shadow);
 
   @media screen and (min-width: 700px) {
     width: 300px
 
     &:hover {
-      box-shadow: 0 2px 4px 0 #0003, 0 3px 10px 0 #0002;
+      box-shadow: var(--shadow-small);
     }
   }
 `;

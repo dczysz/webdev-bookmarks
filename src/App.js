@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import sites from './data/data';
-import Nav from './components/Nav';
+import TopNav from './components/Nav/TopNav';
 import Content from './components/Content';
 
 const pageNames = Object.keys(sites);
@@ -10,12 +10,12 @@ const pageNames = Object.keys(sites);
 const App = () => {
   return (
     <Router>
-      <Nav pages={pageNames} />
+      <TopNav pages={pageNames} />
 
       <Route
         exact
         path={'/'}
-        render={() => <Content name="Web Dev Bookmarks" />}
+        render={() => <Content name="Web Dev Bookmarks" pages={pageNames} />}
       />
 
       {pageNames.map(name => (

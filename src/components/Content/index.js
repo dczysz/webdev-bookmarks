@@ -7,12 +7,11 @@ import Home from './Home';
 const Main = styled.main`
   max-width: 1400px;
   margin: 0 auto;
-
-  & h1 {
-    text-align: center;
-    font-weight: normal;
-    margin: 2rem 0;
-  }
+`;
+const H1 = styled.h1`
+  text-align: center;
+  font-weight: normal;
+  margin: 2rem 0;
 `;
 const Sites = styled.div`
   display: flex;
@@ -37,21 +36,24 @@ const shuffleObjArr = arr => {
   return copy;
 };
 
-const Content = ({ name, sites }) => {
-  return (
-    <Main>
-      <h1>{name[0].toUpperCase() + name.slice(1)}</h1>
+const Content = ({ name, sites, pages }) => {
+  const heading = <H1>{name[0].toUpperCase() + name.slice(1)}</H1>;
 
-      {sites ? (
-        <Sites>
-          {shuffleObjArr(sites).map(site => (
-            <Card key={site.name} {...site} />
-          ))}
-        </Sites>
-      ) : (
-        <Home />
-      )}
+  return sites ? (
+    <Main>
+      {heading}
+
+      <Sites>
+        {shuffleObjArr(sites).map(site => (
+          <Card key={site.name} {...site} />
+        ))}
+      </Sites>
     </Main>
+  ) : (
+    <>
+      {heading}
+      <Home pages={pages} />
+    </>
   );
 };
 
