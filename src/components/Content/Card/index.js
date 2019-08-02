@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 
 const A = styled.a`
   text-decoration: none;
@@ -11,6 +12,7 @@ const A = styled.a`
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 4px 8px 0 #0003, 0 12px 24px 0 #0002;
+  background-color: #fff;
   transition: box-shadow 0.3s;
 
   @media screen and (min-width: 700px) {
@@ -26,13 +28,12 @@ const Img = styled.img`
   width: 100%;
   height: auto;
   min-height: 200px; // Placeholder height, gets reset to auto on img load
-  background-color: #ddd;
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.5s;
 `;
 
 const Text = styled.div`
-  margin-top: auto;
+  // margin-top: auto;
   padding: 1rem;
 
   & h2 {
@@ -47,20 +48,19 @@ const Text = styled.div`
 `;
 
 const Card = ({ name, url, description, img }) => {
+  const applyLoadedStyles = el => {
+    el.setAttribute('style', 'min-height: auto; opacity: 1');
+  };
+
   return (
     <A href={url} target="_blank" rel="noopener noreferrer">
-      <Img
-        src={
-          img
-            ? img
-            : `https://via.placeholder.com/700x${400 +
-                Math.floor(Math.random() * 100)}`
-        }
-        alt={name}
-        onLoad={e =>
-          e.target.setAttribute('style', 'min-height: auto; opacity: 1')
-        }
-      />
+      <LazyLoad once height={200}>
+        <Img
+          src={img ? img : ''}
+          alt={name}
+          onLoad={e => applyLoadedStyles(e.target)}
+        />
+      </LazyLoad>
       <Text>
         <h2>{name}</h2>
         {description ? <p>{description}</p> : null}
