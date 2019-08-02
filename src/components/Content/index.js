@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
@@ -37,6 +37,8 @@ const shuffleObjArr = arr => {
 };
 
 const Content = ({ name, sites, pages }) => {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   const heading = <H1>{name[0].toUpperCase() + name.slice(1)}</H1>;
 
   return sites ? (
