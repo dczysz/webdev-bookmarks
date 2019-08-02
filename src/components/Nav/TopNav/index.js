@@ -60,8 +60,8 @@ const Nav = ({ pages }) => {
           <TopNavItem path="" name="Home" />
 
           {pages.map(page => (
-            <DesktopLink>
-              <TopNavItem key={page} path={page.toLowerCase()} name={page} />
+            <DesktopLink key={page}>
+              <TopNavItem path={page.toLowerCase()} name={page} />
             </DesktopLink>
           ))}
 
