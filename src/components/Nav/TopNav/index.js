@@ -57,7 +57,7 @@ const Nav = ({ pages }) => {
     <>
       <StyledNav>
         <Ul>
-          <TopNavItem path="" name="Home" />
+          <TopNavItem path="" name="Home" clicked={() => setShowMenu(false)} />
 
           {pages.map(page => (
             <DesktopLink key={page}>

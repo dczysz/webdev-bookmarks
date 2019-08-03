@@ -30,13 +30,14 @@ const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   }
 `;
 
-const NavItem = ({ name, path }) => {
+const TopNavItem = ({ name, path, clicked }) => {
   return (
     <Li>
       <StyledNavLink
         exact
         to={'/' + path.toLowerCase()}
         activeClassName={activeClassName}
+        onClick={clicked ? clicked : null}
       >
         {name}
       </StyledNavLink>
@@ -44,4 +45,4 @@ const NavItem = ({ name, path }) => {
   );
 };
 
-export default NavItem;
+export default TopNavItem;
