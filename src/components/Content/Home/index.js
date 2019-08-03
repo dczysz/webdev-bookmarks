@@ -5,6 +5,15 @@ import CardNav from '../../Nav/CardNav';
 
 const Header = styled.header`
   text-align: center;
+  padding: 0 1rem;
+
+  & p {
+    transition: font-size var(--timing);
+
+    @media screen and (min-width: 700px) {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 const Main = styled.main`
@@ -20,8 +29,8 @@ const Home = ({ pages }) => {
     <div>
       <Header>
         <p>
-          This is a collection of bookmarks I've collected in my short time
-          doing web dev
+          A collection of bookmarks I've collected during my time doing web
+          development
         </p>
       </Header>
 
