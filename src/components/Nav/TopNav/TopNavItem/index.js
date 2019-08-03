@@ -25,8 +25,8 @@ const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   }
 
   &:hover {
-    color: var(--primary);
-    opacity: 0.5;
+    color: var(--secondary);
+    border-bottom: 2px solid var(--secondary);
   }
 `;
 

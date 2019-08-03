@@ -16,7 +16,7 @@ const Link = styled(NavLink)`
   box-shadow: var(--shadow-big);
   text-decoration: none;
   border-radius: var(--radius);
-  transition: box-shadow var(--timing-shadow), color var(--timing-shadow);
+  transition: box-shadow var(--timing), color var(--timing);
 
   &.${activeClassName} {
     color: var(--primary);

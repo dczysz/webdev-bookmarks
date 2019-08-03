@@ -1,12 +1,13 @@
 :root {
   --shadow-big: 0 4px 8px 0 #0003, 0 12px 24px 0 #0002;
   --shadow-small: 0 2px 4px 0 #0003, 0 3px 10px 0 #0002;
-  --timing-shadow: 0.2s;
+  --timing: 0.2s;
+  --timing-img: 0.5s;
   --radius: 4px;
   --white: #fff;
-  --off-white: ##fafafa;
-  --primary: #ff7bda;
-  --secondary: #a2d6eb;
+  --off-white: #fafafa;
+  --primary: #8957fd;
+  --secondary: #ff7bda;
   --mobile: 576px;
   --tablet: 700px;
 }

@@ -8,7 +8,7 @@ const Header = styled.header`
 `;
 
 const Main = styled.main`
-  background: var(--secondary);
+  background: var(--primary);
   display: flex;
   justify-content: center;
   padding: 2rem 0;

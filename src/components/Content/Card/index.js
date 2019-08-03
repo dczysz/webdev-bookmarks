@@ -13,7 +13,7 @@ const A = styled.a`
   overflow: hidden;
   box-shadow: var(--shadow-big);
   background-color: var(--white);
-  transition: box-shadow var(--timing-shadow);
+  transition: box-shadow var(--timing);
 
   @media screen and (min-width: 700px) {
     width: 300px
@@ -29,7 +29,7 @@ const Img = styled.img`
   height: auto;
   min-height: 200px; // Placeholder height, gets reset to auto on img load
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity var(--timing-img);
 `;
 
 const Text = styled.div`
