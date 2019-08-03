@@ -2,6 +2,7 @@
   --shadow-big: 0 4px 8px 0 #0003, 0 12px 24px 0 #0002;
   --shadow-small: 0 2px 4px 0 #0003, 0 3px 10px 0 #0002;
   --timing: 0.2s;
+  --timing-nav: 0.1s;
   --timing-img: 0.5s;
   --radius: 4px;
   --white: #fff;

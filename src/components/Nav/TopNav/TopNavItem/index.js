@@ -18,6 +18,7 @@ const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   padding: 0.5rem;
   text-transform: capitalize;
   text-decoration: none;
+  transition: all var(--timing-nav);
 
   &.${activeClassName} {
     color: var(--primary);
