@@ -48,13 +48,14 @@ const Text = styled.div`
 `;
 
 const Card = ({ name, url, description, img }) => {
+  // Fade image in and remove min-height placeholder value
   const applyLoadedStyles = el => {
     el.setAttribute('style', 'min-height: auto; opacity: 1');
   };
 
   return (
     <A href={url} target="_blank" rel="noopener noreferrer">
-      <LazyLoad once height={200}>
+      <LazyLoad once height={200} resize>
         <Img
           src={img ? img : ''}
           alt={name}
