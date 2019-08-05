@@ -3,13 +3,6 @@ import { images as imgs } from '../assets/img';
 const sites = {
   colors: [
     {
-      name: 'Colormind',
-      url: 'http://colormind.io/',
-      description:
-        'Color scheme generator that uses deep learning to get colors from photographs and movies',
-      img: imgs.colormind,
-    },
-    {
       name: 'Color Hunt',
       url: 'https://colorhunt.co/',
       description: 'Hand picked color palettes',
@@ -27,6 +20,13 @@ const sites = {
       url: 'https://mycolor.space/',
       description: 'Color palette and gradient generator',
       img: imgs.colorSpace,
+    },
+    {
+      name: 'Colormind',
+      url: 'http://colormind.io/',
+      description:
+        'Color scheme generator that uses deep learning to get colors from photographs and movies',
+      img: imgs.colormind,
     },
     {
       name: 'Colors Interactor',
@@ -204,10 +204,11 @@ const sites = {
       img: imgs.cssfx,
     },
     {
-      name: 'CSS-Tricks Grid Guide',
-      url: 'https://css-tricks.com/snippets/css/complete-guide-grid/',
-      description: 'Complete guide for CSS grid',
-      img: imgs.cssTricksGrid,
+      name: 'CSS-Tricks Date Guide',
+      url:
+        'https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/',
+      description: 'Everything you need to know about Date in JavaScript',
+      img: imgs.cssTricksDate,
     },
     {
       name: 'CSS-Tricks Flexbox Guide',
@@ -216,11 +217,10 @@ const sites = {
       img: imgs.cssTricksFlexbox,
     },
     {
-      name: 'CSS-Tricks Date Guide',
-      url:
-        'https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/',
-      description: 'Everything you need to know about Date in JavaScript',
-      img: imgs.cssTricksDate,
+      name: 'CSS-Tricks Grid Guide',
+      url: 'https://css-tricks.com/snippets/css/complete-guide-grid/',
+      description: 'Complete guide for CSS grid',
+      img: imgs.cssTricksGrid,
     },
     {
       name: 'Every Layout',
