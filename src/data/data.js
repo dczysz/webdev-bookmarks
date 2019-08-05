@@ -77,6 +77,12 @@ const sites = {
       img: imgs.ezgif,
     },
     {
+      name: 'Feather',
+      url: 'https://feathericons.com/',
+      description: 'Simply beautiful open source icons',
+      img: imgs.featherIcons,
+    },
+    {
       name: 'Font Awesome',
       url: 'https://fontawesome.com/',
       description: 'Vector icons and logos',
@@ -122,6 +128,11 @@ const sites = {
       name: 'Unicons',
       url: 'https://iconscout.com/unicons',
       img: imgs.unicons,
+    },
+    {
+      name: 'useAnimations',
+      url: 'https://useanimations.com/',
+      img: imgs.useAnimations,
     },
   ],
 

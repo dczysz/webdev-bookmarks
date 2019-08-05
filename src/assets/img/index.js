@@ -5,7 +5,8 @@
     3. Take screenshot
     4. Resize to 700px width
     5. Save in /assets/img/ with hyphenated-name
-    6. Add import and export in this file and set as `url` property in data.js
+    6. Add import and export in this file
+    7. Add entry in data.js and set exported name as `img` property
 
     More resources: https://undesign.learn.uno/
 */
@@ -30,6 +31,8 @@ import fontAwesome from './font-awesome.png';
 import svgRepo from './svg-repo.png';
 import personas from './personas.png';
 import duotone from './duotone.png';
+import featherIcons from './feather-icons.png';
+import useAnimations from './use-animations.png';
 
 // Backgrounds
 import coolBackgrounds from './cool-backgrounds.png';
@@ -195,4 +198,6 @@ export const images = {
   personas,
   subtlePatterns,
   duotone,
+  featherIcons,
+  useAnimations,
 };
