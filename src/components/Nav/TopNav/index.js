@@ -6,7 +6,7 @@ import CardNav from '../CardNav';
 import MobileNavToggle from './MobileNavToggle';
 
 const StyledNav = styled.nav`
-  border-bottom: 2px solid var(--primary);
+  border-bottom: 2px solid rgb(var(--primary));
 `;
 
 const Ul = styled.ul`
@@ -25,9 +25,9 @@ const Ul = styled.ul`
 `;
 
 const CardNavMenu = styled.div`
-  background: white;
+  background: rgb(var(--white));
   position: fixed;
-  top: 38px;
+  top: 39px;
   left: 0;
   right: 0;
   bottom: 0;

@@ -16,7 +16,7 @@ const Toggle = styled.div`
     --height: 3px;
     width: 100%;
     height: var(--height);
-    background-color: var(--primary);
+    background-color: rgb(var(--primary));
     margin: calc(var(--height) * 1) 0;
   }
 

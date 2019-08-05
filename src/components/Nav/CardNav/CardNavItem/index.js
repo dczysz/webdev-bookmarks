@@ -9,7 +9,7 @@ const Link = styled(NavLink)`
   margin: 1rem;
   height: 8rem;
   width: 8rem;
-  background-color: var(--white);
+  background-color: rgb(var(--white));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,14 +19,14 @@ const Link = styled(NavLink)`
   transition: box-shadow var(--timing), color var(--timing);
 
   &.${activeClassName} {
-    color: var(--primary);
+    color: rgb(var(--primary));
     box-shadow: var(--shadow-small);
     pointer-events: none;
   }
 
   &:hover {
     box-shadow: var(--shadow-small);
-    color: var(--primary);
+    color: rgb(var(--primary));
   }
 `;
 

@@ -5,10 +5,10 @@
   --timing-nav: 0.1s;
   --timing-img: 0.5s;
   --radius: 4px;
-  --white: #fff;
-  --off-white: #fafafa;
-  --primary: #8957fd;
-  --secondary: #ff7bda;
+  --white: 255, 255, 255;
+  --off-white: 250, 250, 250;
+  --primary: 137, 87, 253;
+  --secondary: 255, 123, 218;
   --mobile: 576px;
   --tablet: 700px;
 }
@@ -27,7 +27,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--off-white);
+  background-color: rgb(var(--off-white));
 }
 
 h1 {

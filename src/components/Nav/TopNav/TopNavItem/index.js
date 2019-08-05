@@ -19,15 +19,16 @@ const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   text-transform: capitalize;
   text-decoration: none;
   transition: all var(--timing-nav);
+  border-bottom: 2px solid rgba(var(--secondary), 0);
 
   &.${activeClassName} {
-    color: var(--primary);
+    color: rgb(var(--primary));
     pointer-events: none;
   }
 
   &:hover {
-    color: var(--secondary);
-    border-bottom: 2px solid var(--secondary);
+    color: rgb(var(--secondary));
+    border-color: rgba(var(--secondary), 1);
   }
 `;
 

@@ -17,7 +17,7 @@ const Header = styled.header`
 `;
 
 const Main = styled.main`
-  background: var(--primary);
+  background: rgb(var(--primary));
   display: flex;
   justify-content: center;
   padding: 2rem 0;
