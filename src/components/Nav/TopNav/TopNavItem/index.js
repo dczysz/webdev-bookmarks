@@ -22,13 +22,14 @@ const StyledNavLink = styled(NavLink).attrs({ activeClassName })`
   border-bottom: 2px solid rgba(var(--secondary), 0);
 
   &.${activeClassName} {
-    color: rgb(var(--primary));
+    color: rgb(var(--secondary));
+    border-color: rgba(var(--secondary), 1);
     pointer-events: none;
   }
 
   &:hover {
     color: rgb(var(--secondary));
-    border-color: rgba(var(--secondary), 1);
+    border-color: rgb(var(--secondary));
   }
 `;
 
