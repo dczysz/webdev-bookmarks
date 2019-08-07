@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import LazyLoad from 'react-lazyload';
 
+import Tag from './Tag';
+
 const A = styled.a`
   text-decoration: none;
   color: inherit;
@@ -12,8 +14,9 @@ const A = styled.a`
   flex-direction: column;
   overflow: hidden;
   box-shadow: var(--shadow-big);
-  background-color: var(--white);
+  background-color: rgb(var(--white));
   transition: box-shadow var(--timing);
+  position: relative;
 
   @media screen and (min-width: 700px) {
     width: 300px
@@ -47,7 +50,15 @@ const Text = styled.div`
   }
 `;
 
-const Card = ({ name, url, description, img }) => {
+const Tags = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 0.5rem;
+`;
+
+const Card = ({ name, url, description, img, tagNames }) => {
   // Fade image in and remove min-height placeholder value
   const applyLoadedStyles = el => {
     el.setAttribute('style', 'min-height: auto; opacity: 1');
@@ -61,6 +72,9 @@ const Card = ({ name, url, description, img }) => {
           alt={name}
           onLoad={e => applyLoadedStyles(e.target)}
         />
+        <Tags>
+          {tagNames ? tagNames.map(name => <Tag name={name} />) : null}
+        </Tags>
       </LazyLoad>
       <Text>
         <h2>{name}</h2>
