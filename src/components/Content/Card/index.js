@@ -30,9 +30,22 @@ const A = styled.a`
 const Img = styled.img`
   width: 100%;
   height: auto;
-  min-height: 200px; // Placeholder height, gets reset to auto on img load
+  min-height: calc(
+    300px / 1.5625
+  ); // Placeholder height, gets reset to auto on img load
   opacity: 0;
   transition: opacity var(--timing-img);
+  position: relative;
+  background: #0003;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 0.5;
+    text-wrap: no-wrap;
+  }
 `;
 
 const Text = styled.div`
@@ -60,8 +73,8 @@ const Tags = styled.div`
 
 const Card = ({ name, url, description, img, tagNames }) => {
   // Fade image in and remove min-height placeholder value
-  const applyLoadedStyles = el => {
-    el.setAttribute('style', 'min-height: auto; opacity: 1');
+  const applyStyles = (el, styles) => {
+    el.setAttribute('style', styles);
   };
 
   return (
@@ -69,11 +82,14 @@ const Card = ({ name, url, description, img, tagNames }) => {
       <LazyLoad once height={200} resize>
         <Img
           src={img ? img : ''}
-          alt={name}
-          onLoad={e => applyLoadedStyles(e.target)}
+          alt={img ? name : 'No photo available'}
+          onLoad={e => applyStyles(e.target, 'min-height: auto; opacity: 1')}
+          onError={e => applyStyles(e.target, 'opacity: 1')}
         />
         <Tags>
-          {tagNames ? tagNames.map(name => <Tag name={name} />) : null}
+          {tagNames
+            ? tagNames.map(name => <Tag key={name} name={name} />)
+            : null}
         </Tags>
       </LazyLoad>
       <Text>
