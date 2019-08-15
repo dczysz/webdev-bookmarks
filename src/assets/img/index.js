@@ -31,6 +31,8 @@ import forkAwesome from './fork-awesome.png';
 import humaaans from './humaaans.png';
 import imageColor from './image-color.png';
 import personas from './personas.png';
+import photoronoi from './photoronoi.png';
+import squoosh from './squoosh.png';
 import svgRepo from './svg-repo.png';
 import undraw from './undraw.png';
 import unicons from './unicons.png';
@@ -39,16 +41,21 @@ import useAnimations from './use-animations.png';
 // Backgrounds
 import coolBackgrounds from './cool-backgrounds.png';
 import heroPatterns from './hero-patterns.png';
+import meshGradient from './mesh-gradient.png';
 import subtlePatterns from './subtle-patterns.png';
 import svgBackgrounds from './svg-backgrounds.png';
 
 // HTML
+import adamSilver from './adam-silver.png';
+import htmlCanDoThat from './html-can-do-that.png';
 import linkRels from './link-rels.png';
 import metaTags from './meta-tags.png';
 import webDev from './web-dev.png';
+import customRadio from './custom-radio.png';
 
 // CSS
 import componentsAi from './components-ai.png';
+import cssCanDoThat from './css-can-do-that.png';
 import cssEffectsSnippets from './css-effects-snippets.png';
 import cssfx from './cssfx.png';
 import cssTricksDate from './css-tricks-date.png';
@@ -119,6 +126,7 @@ import uiSources from './ui-sources.png';
 import webframe from './webframe.png';
 
 export const images = {
+  adamSilver,
   alligator,
   andrewWangHoyer,
   apiList,
@@ -136,12 +144,14 @@ export const images = {
   coolBackgrounds,
   coolors,
   countApi,
+  cssCanDoThat,
   cssEffectsSnippets,
   cssfx,
   cssGradient,
   cssTricksDate,
   cssTricksFlexbox,
   cssTricksGrid,
+  customRadio,
   danielTemkin,
   designDetails,
   designMunk,
@@ -160,6 +170,7 @@ export const images = {
   hakimElHattab,
   hamburgers,
   heroPatterns,
+  htmlCanDoThat,
   httpster,
   humaaans,
   imageColor,
@@ -174,6 +185,7 @@ export const images = {
   madeWithVue,
   marc,
   materialUi,
+  meshGradient,
   metaTags,
   mfwDesign,
   modernJs,
@@ -183,6 +195,7 @@ export const images = {
   onePageLove,
   pages,
   personas,
+  photoronoi,
   picular,
   placeholder,
   pttrns,
@@ -191,6 +204,7 @@ export const images = {
   regex101,
   sarahDrasner,
   seanDorr,
+  squoosh,
   stripe,
   subtlePatterns,
   svgBackgrounds,

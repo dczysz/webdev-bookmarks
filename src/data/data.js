@@ -131,6 +131,20 @@ const sites = {
       tagNames: [tags.ILLUSTRATIONS, tags.TOOLS],
     },
     {
+      name: 'Photoronoi',
+      url: 'https://wattenberger.com/photoronoi',
+      description: 'Turn images into voronoi SVGs',
+      img: imgs.photoronoi,
+      tagNames: [tags.TOOLS],
+    },
+    {
+      name: 'Squoosh',
+      url: 'https://squoosh.app/',
+      description: 'Drag and drop image optimization',
+      img: imgs.squoosh,
+      tagNames: [tags.TOOLS],
+    },
+    {
       name: 'SVG Repo',
       url: 'https://www.svgrepo.com/',
       description: 'Free SVG vectors and icons for commercial use',
@@ -174,6 +188,12 @@ const sites = {
       tagNames: [tags.PATTERNS],
     },
     {
+      name: 'Mesh Gradients',
+      url: 'https://www.ls.graphics/meshgradients',
+      description: 'Free JPG mesh gradient collection',
+      img: imgs.meshGradient,
+    },
+    {
       name: 'Subtle Patterns',
       url: 'https://www.toptal.com/designers/subtlepatterns/',
       description: 'Subtle background patterns',
@@ -190,6 +210,20 @@ const sites = {
   ],
 
   HTML: [
+    {
+      name: 'Adam Silver',
+      url: 'https://adamsilver.io/',
+      description: 'Inclusive design techniques and articles',
+      img: imgs.adamSilver,
+      tagNames: [tags.TECHNIQUES],
+    },
+    {
+      name: 'HTML Can Do That?',
+      url: 'https://dev.to/ananyaneogi/html-can-do-that-c0n',
+      description: 'A list of things that can be done using just HTML',
+      img: imgs.htmlCanDoThat,
+      tagNames: [tags.TECHNIQUES],
+    },
     {
       name: 'Link Rels',
       url: 'https://3perf.com/blog/link-rels/',
@@ -211,6 +245,14 @@ const sites = {
       img: imgs.webDev,
       tagNames: [tags.TECHNIQUES, tags.TOOLS],
     },
+    {
+      name: 'Custom Accessible Radio Buttons',
+      url:
+        'https://www.a11ywithlindsey.com/blog/create-custom-keyboard-accessible-radio-buttons',
+      description: 'How to create custom keyboard accessible radio buttons',
+      img: imgs.customRadio,
+      tagNames: [tags.TECHNIQUES],
+    },
   ],
 
   CSS: [
@@ -220,6 +262,13 @@ const sites = {
       description: 'Experiment with fancy CSS designs',
       img: imgs.componentsAi,
       tagNames: [tags.TOOLS],
+    },
+    {
+      name: 'CSS Can Do That?',
+      url: 'https://dev.to/ananyaneogi/css-can-do-that-18g7',
+      description: 'A list of amazing things that CSS can do',
+      img: imgs.cssCanDoThat,
+      tagNames: [tags.TECHNIQUES],
     },
     {
       name: 'CSS Effects Snippets',
